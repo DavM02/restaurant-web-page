@@ -1,0 +1,287 @@
+.service-type {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service-type .fa-solid {
+    color: #C19D60;
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: 0.3s all linear;
+}
+
+.bg-image {
+    position: absolute;
+    transition: 0.3s all linear;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transform-origin: center;
+    z-index: -1;
+}
+
+.bg-image .fa-solid {
+    color: #c1c1c151;
+    font-size: 110px;
+}
+
+
+#reservations {
+    height: 500px;
+}
+
+.make-a-reservation{
+    background-color: #f2eee8;
+}
+
+#reservations button,  .to-sign-up button{
+    width: 100%;
+    background-color: #C19D60;
+}
+
+#reservations button:hover, .to-sign-up button:hover {
+    background-color: #1b1b1b;
+}
+
+#reservations input {
+    margin: 10px 0;
+    height: 50px;
+    width: 50%;
+    color: black;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.award img {
+    mix-blend-mode: luminosity;
+}
+
+.award:hover img {
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+
+.social-media .fa-brands {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+    transition: 0.3s all linear;
+}
+
+#about-us-page .background {
+    background-image: url("../images/bg-3.jpg");
+}
+
+#menu-page .background {
+    background-image: url("../images/bg-4.jpg");
+}
+
+#menu-page #menu .grid .image::after {
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#menu-page #menu .grid .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#menu-page #menu .grid h5 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+
+.to-right {
+    grid-template-columns: 1fr 2% 48%;
+}
+
+.to-left {
+    grid-template-columns: 48% 2% 1fr;
+}
+
+#services-page .background,
+#img-gallery-page .background {
+    background-image: url("../images/bg-2.jpg");
+}
+
+#wine-page .background {
+    background-image: url("../images/bg-5.jpg");
+}
+
+#faq .banner {
+    background-image: url("../images/bg-2.jpg");
+    background-position: center;
+    height: 600px;
+}
+
+.banner::after {
+    z-index: 0;
+}
+
+.question .fa-chevron-down {
+    color: white;
+    margin-right: 5px;
+    position: relative;
+}
+
+.question {
+    margin-top: 10px;
+    padding: 20px 30px;
+    border: 1px solid rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    border-left: 1px solid rgb(48, 48, 48);
+    border-bottom: 1px solid rgb(48, 48, 48);
+    border-right: 1px solid rgb(48, 48, 48);
+    padding: 10px;
+}
+
+.answer p {
+    margin: 0;
+}
+
+#wine-types, #popular-questions {
+    background-color: #1b1b1b;
+}
+
+.wine-icon:after,
+.wine-icon::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: #4e4e4e3e;
+    top: 50%;
+}
+
+
+.wine-icon::before {
+    right: -250%;
+}
+
+.wine-icon:after {
+    left: -250%;
+}
+
+#gallery .image::after {
+    z-index: 0;
+    opacity: 0.4;
+}
+
+#gallery .image {
+    overflow: hidden;
+}
+
+#chefs-page .background {
+    background-image: url("../images/slide-1.jpg");
+}
+
+#not-found-page, #coming-soon-page, #sign-up {
+    background-image: url("../images/bg-4.jpg");
+    width: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#not-found-page a, #coming-soon-page a {
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8px;
+}
+
+.error {
+    font-family: libreCaslonDisplay, sans-serif;
+    font-size: 230px;
+    color: #C19D60;
+}
+
+#coming-soon-page input[type="email"] {
+    background: transparent;
+    padding-left: 10px;
+}
+#coming-soon-page input[type="email"]::placeholder {
+    color: white;
+}
+
+#coming-soon-page button {
+    margin: 0;
+    background-color: #C19D60;
+}
+ 
+#day, #hour, #min, #sec {
+    font-family: libreCaslonDisplay, sans-serif;
+    font-size: 65px;
+}
+
+.countdown {
+    border: 1px solid white;
+    padding: 30px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#getting-started {
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    display: grid;
+    gap: 25px;
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.map-wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    mix-blend-mode: saturation;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+}
+
+#contact-details .fa-solid {
+    font-size: 50px;
+    color:#C19D60;
+    margin: 10px;
+}
+
+#contact-details .item {
+    background-color: #f2eee8;
+    width: 100%;
+    text-align: start !important;
+    padding: 20px 0;
+}
+
+#contact-details p, #contact-details h2 {
+    margin: 0;
+}
+ 

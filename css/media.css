@@ -1,0 +1,165 @@
+/* 576px for portrait phones.
+768px for tablets.
+992px for laptops.
+1200px for large devices. */
+
+@media all and (max-width: 460px) {
+
+    .menu-list .type {
+        margin: 20px 0;
+    }
+
+    .food-image .image {
+        width: 50px;
+    }
+
+    .dot-line {
+        display: none;
+    }
+
+    .menu-list h3 {
+        font-size: 14px;
+    }
+
+    .menu-list p {
+        line-height: 15px;
+    }
+
+}
+
+@media all and (max-width: 576px) {
+
+    .container {
+        padding: 0 20px !important;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100% !important;
+    }
+
+    .main-content {
+        height: 85% !important;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .opening-hours-timetable,
+    .make-a-reservation {
+        width: 100%;
+        position: static;
+    }
+
+    #testimony,
+    #reservations {
+        height: 100%;
+    }
+
+    .order-1 {
+        order: -1;
+    }
+
+
+    .error {
+        font-size: 150px;
+    }
+
+    .grid-cards {
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    }
+
+
+    #recommendation h1::after,
+#features h1::after,
+#chefs h1::after,
+#service-categories h1::after {
+    font-size: 70px;
+}
+
+}
+
+@media all and (min-width: 577px) and (max-width: 768px) {
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100% !important;
+    }
+
+    .main-content {
+        height: 85% !important;
+    }
+
+    .opening-hours-timetable,
+    .make-a-reservation {
+        width: 80%;
+        position: static;
+    }
+
+    #testimony,
+    #reservations {
+        height: 100%;
+    }
+
+    .order-1 {
+        order: -1;
+    }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .main-content {
+        height: 80% !important;
+    }
+
+    .opening-hours-timetable,
+    .make-a-reservation {
+        width: 70%;
+        position: static;
+    }
+
+    #testimony,
+    #reservations {
+        height: 100%;
+    }
+
+    .order-1 {
+        order: -1;
+    }
+
+    footer .item:nth-child(3) {
+        width: 60%;
+    }
+
+}

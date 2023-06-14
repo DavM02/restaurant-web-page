@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6c1fb36cca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body id="services-page">
+    <!-- header-start -->
+    <div class="header-wrapper background bg-cover">
+        <header>
+            <div class="container">
+                <div class="between" style="gap: 0;">
+                    <div class="item">
+                        <a href="index.html" style="margin: 0;">
+                            <div class="logo">
+                                <span>Candóre</span>
+                                <br>
+                                <h6 style="text-align: center; color: white;">Restaurant</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <nav class="nav-container">
+                            <div class="menu" id="dropdown-menu" onclick="hamburgerMenu()">
+                                <ul class="row">
+                                    <li>
+                                        <a href="index.html" style="color:#C19D60;">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html" id="about-link">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="menu.html" id="menu-link">Menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="wine.html" id="wine-link">Wine</a>
+                                    </li>
+                                    <li class="pages">
+                                        <div>Pages <i class="fa-solid fa-chevron-down"></i></div>
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="services.html">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="img-gallery.html">Image gallery</a>
+                                            </li>
+                                            <li>
+                                                <a href="chefs.html">Chefs</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="404.html">404</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Coming Soon</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html" id="blog-link">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" id="contact-link">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="sign-up-link">sign-up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa-solid fa-cart-shopping">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="item no-show-button">
+                        <!-- it is shown only in hamburger-menu -->
+                        <button type="button" id="menu-lines" onclick="hamburgerMenu()">
+                            <div class="menu-line" id="first-line"></div>
+                            <div class="menu-line" id="second-line"></div>
+                            <div class="menu-line" id="third-line"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-content container center" style="height: 110%;">
+            <h6 style="color: white;">what we do</h6>
+            <h1>Our Services
+            </h1>
+            <span style="margin-bottom: 10px;">And Features</span>
+        </div>
+    </div>
+    <!-- header-end -->
+
+    <!-- main-start -->
+    <main>
+        <section id="service-categories">
+            <div class="container">
+                <div class="center">
+                    <h6>Our Services</h6>
+                    <h1 style="color: rgb(20, 20, 20);">Food Category
+                    </h1>
+                    <div class="icon">
+                        <div class="image coffee">
+                            <img src="images/coffee.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-cards">
+                    <div class="item">
+                        <div class="service-type">
+                            <div class="icon">
+                                <i class="fa-solid fa-burger"></i>
+                            </div>
+                            <h5 style="color: rgb(20, 20, 20);">Cheeseburger</h5>
+                            <p style="color: rgb(20, 20, 20);">
+                                Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec
+                                accumsan aliquam sit sapien.</p>
+                            <div class="bg-image">
+                                <i class="fa-solid fa-burger"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-type">
+                            <div class="icon"><i class="fa-solid fa-pizza-slice"></i></div>
+                            <h5 style="color: rgb(20, 20, 20);">Pizza Slice</h5>
+                            <p style="color: rgb(20, 20, 20);">
+                                Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec
+                                accumsan aliquam sit sapien.</p>
+                            <div class="bg-image">
+                                <i class="fa-solid fa-pizza-slice"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-type">
+                            <div class="icon"><i class="fa-solid fa-mug-hot"></i></div>
+                            <h5 style="color: rgb(20, 20, 20);">Coffee-Cup</h5>
+                            <p style="color: rgb(20, 20, 20);">
+                                Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec
+                                accumsan aliquam sit sapien.</p>
+                            <div class="bg-image">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-type">
+                            <div class="icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+                            <h5 style="color: rgb(20, 20, 20);">Chicken-Leg</h5>
+                            <p style="color: rgb(20, 20, 20);">
+                                Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec
+                                accumsan aliquam sit sapien.</p>
+                            <div class="bg-image">
+                                <i class="fa-solid fa-drumstick-bite"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-type">
+                            <div class="icon">
+                                <i class="fa-solid fa-fish"></i>
+                            </div>
+                            <h5 style="color: rgb(20, 20, 20);">Fish</h5>
+                            <p style="color: rgb(20, 20, 20);">
+                                Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec
+                                accumsan aliquam sit sapien.</p>
+                            <div class="bg-image">
+                                <i class="fa-solid fa-fish"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-type">
+                            <div class="icon"><i class="fa-solid fa-cake-candles"></i></div>
+                            <h5 style="color: rgb(20, 20, 20);">Wedding Cake</h5>
+                            <p style="color: rgb(20, 20, 20);">
+                                Restaurant vulputate massa ons amet ravida haretra nuam the drana miss uctus enec
+                                accumsan aliquam sit sapien.</p>
+                            <div class="bg-image">
+                                <i class="fa-solid fa-cake-candles"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="faq">
+            <div class="container">
+                <div class="grid">
+                    <div class="item">
+                        <h6>FREQUENTLY ASKED QUESTIONS</h6>
+                        <h2>Common Questions</h2>
+                        <div class="box-container">
+                            <div class="question">
+                                <div class="row">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <h3>How can I book private dinner?</h3>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Restaurant ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan
+                                    ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete
+                                    ridiculus mus nellentesque habitant morbine.</p>
+                            </div>
+                            <div class="question">
+                                <div class="row">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <h3>How frequently do you change the menu?</h3>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Restaurant ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan
+                                    ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete
+                                    ridiculus mus nellentesque habitant morbine.</p>
+                            </div>
+                            <div class="question">
+                                <div class="row">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <h3>How do I change / cancel a reservation?</h3>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Restaurant ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan
+                                    ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete
+                                    ridiculus mus nellentesque habitant morbine.</p>
+                            </div>
+                            <div class="question">
+                                <div class="row">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <h3>What is the special menu offer?</h3>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Restaurant ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan
+                                    ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete
+                                    ridiculus mus nellentesque habitant morbine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item" style="overflow: hidden;">
+                            <div class="banner bg-cover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <div class="container">
+                <div class="center">
+                    <h6>first-class</h6>
+                    <h1>Our Fearutes</h1>
+                    <div class="icon">
+                        <div class="image tray">
+                            <img src="images/dinner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="card-container">
+                            <div class="card-inner">
+                                <div class="front-card">
+                                    <div class="card-image bg-cover">
+                                        <div class="image" style="margin: 0;">
+                                            <img src="images/card-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="icon">
+                                                <div class="image">
+                                                    <img src="images/card-icon-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h6>current menu</h6>
+                                            <h5>Daily New Fresh Menus</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back-card">
+                                    <h6>current menu</h6>
+                                    <h5 style="color: rgb(20, 20, 20);">Daily New Fresh Menus</h5>
+                                    <p>Lorem nisl miss nestibulum nec odio duru the aucan ula orci varius natoque enatau
+                                        manis dis arturient monte miss morbine.</p>
+                                    <div class="button">
+                                        <button>view menu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-container">
+                            <div class="card-inner">
+                                <div class="front-card">
+                                    <div class="card-image bg-cover">
+                                        <div class="image" style="margin: 0;">
+                                            <img src="images/card-2.jpg" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="icon" style="margin:20px 0">
+                                                <div class="image" style="margin: 0;">
+                                                    <img src="images/card-icon-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h6>Address of taste</h6>
+                                            <h5>Fresh Ingridient Meals</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back-card">
+                                    <h6>Address of taste</h6>
+                                    <h5 style="color: rgb(20, 20, 20);">Fresh Ingridient Meals</h5>
+                                    <p>Lorem nisl miss nestibulum nec odio duru the aucan ula orci varius natoque enatau
+                                        manis dis arturient monte miss morbine.</p>
+                                    <div class="button">
+                                        <button>view menu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-container">
+                            <div class="card-inner">
+                                <div class="front-card">
+                                    <div class="card-image bg-cover">
+                                        <div class="image" style="margin: 0;">
+                                            <img src="images/card-3.jpg" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="icon">
+                                                <div class="image">
+                                                    <img src="images/card-icon-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <h6>executive chefs</h6>
+                                            <h5>Senior & Talented Chefs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back-card">
+                                    <h6>executive chefs</h6>
+                                    <h5 style="color: rgb(20, 20, 20);">Senior & Talented Chefs</h5>
+                                    <p>Lorem nisl miss nestibulum nec odio duru the aucan ula orci varius natoque enatau
+                                        manis dis arturient monte miss morbine.</p>
+                                    <div class="button">
+                                        <button>view menu</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reservations" class="bg-cover ">
+            <div class="container" style="height: 100%;">
+                <div class="grid">
+                    <div class="item">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h5>
+                            A modern restaurant with a menu that will make your mouth water.</h5>
+                        <div class="row">
+                            <div class="item">
+                                <div class="icon">
+                                    <div class="image" style="width: 70px; margin-right: 10px;">
+                                        <img src="images/tray.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h6 style="color: #C19D60;">reservations</h6>
+                                <h5> 855 100 4444
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"></div>
+                    <div class="item center" style="height: 100%; width: 100%; position: relative;">
+                        <div class="make-a-reservation">
+                            <h2 style="color: rgb(20, 20, 20);">Make A Reservation</h2>
+                            <div class="line"></div>
+                            <form action="#">
+                                <div class="between column">
+                                    <input type="text" placeholder="your name">
+                                    <input type="text" placeholder="phone">
+                                </div>
+                                <div class="between column">
+                                    <input type="email" placeholder="email address">
+                                    <input type="text" placeholder="date">
+                                </div>
+                                <div class="between column">
+                                    <input type="text" placeholder="persons">
+                                    <input type="text" placeholder="time">
+                                </div>
+                                <div class="button column">
+                                    <button type="submit">check availability</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="awards">
+            <div class="container">
+                <div class="grid">
+                    <div class="item">
+                        <div class="between">
+                            <div class="item award">
+                                <div class="image">
+                                    <img src="images/award-1.png">
+                                </div>
+                            </div>
+                            <div class="item award">
+                                <div class="image">
+                                    <img src="images/award-2.png">
+                                </div>
+                            </div>
+                            <div class="item award">
+                                <div class="image">
+                                    <img src="images/award-3.png">
+                                </div>
+                            </div>
+                            <div class="item award">
+                                <div class="image">
+                                    <img src="images/award-4.png">
+                                </div>
+                            </div>
+                            <div class="item award">
+                                <div class="image">
+                                    <img src="images/award-5.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- main-end -->
+
+    <!-- footer-start -->
+    <footer>
+        <div class="container">
+            <div class="between">
+                <div class="grid">
+                    <div class="item">
+                        <h5 style="color: #C19D60;">About Us</h5>
+                        <p>Restaurant metus dibus eudui aolicitudin istique lacus in the vestibulum congue est vitae
+                            maximus
+                            duru ne lacus in massa tristique aharetra ne ut isum.</p>
+                    </div>
+                    <div class="item">
+                        <h5 style="color: #C19D60;">Contact Info</h5>
+                        <p>1616 Broadway NY, New York 10001
+                            United States of America</p>
+                        <h5 style="color: #C19D60;">855 100 4444</h5>
+                        <span style="border-bottom: 1px solid #C19D60;">info@luxuryhotel.com</span>
+                        <div class="social-media">
+                            <div class="row" style="gap: 17px;">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5 style="color: #C19D60;">Subscribe</h5>
+                        <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send
+                            you a notification by email.</p>
+                        <form action="#">
+                            <div class="subscribe row">
+                                <input type="email" placeholder="Your email">
+                                <div class="button">
+                                    <button type="submit">subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- script -->
+    <script src="script/script.js"></script>
+    <!-- script -->
+</body>
+
+</html>

@@ -1,0 +1,616 @@
+/*//////////////////////////// header-start ////////////////////////////*/
+
+.logo {
+    margin: 20px 0;
+}
+
+.show-content-media {
+    display: none;
+    pointer-events: none;
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+.header-wrapper {
+    z-index: 777 !important;
+}
+
+.background,
+#reservations {
+    background-image: url("../images/bg-1.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-cover {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-cover::after {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.no-show-button {
+    display: none;
+    pointer-events: none;
+}
+
+.background span {
+    color: #C19D60;
+    font-size: 35px;
+    font-family: libreCaslonDisplay, sans-serif;
+    letter-spacing: 1px;
+}
+
+.fa-cart-shopping {
+    font-size: 25px;
+    position: relative;
+}
+
+.fa-cart-shopping::after {
+    content: "2";
+    position: absolute;
+    font-family: noahRegular, sans-serif;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #C19D60;
+    top: -10px;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+}
+
+.dropdown-list {
+    position: absolute;
+    background-color: #1b1b1b;
+    opacity: 0;
+    transition: 0.3s all linear;
+    pointer-events: none;
+    transform: translateY(20%);
+    top: 50px;
+    z-index: 15;
+    left: 0;
+}
+
+.dropdown-list li {
+    padding: 2px 120px 2px 10px;
+    border-bottom: 1px solid rgba(118, 118, 118, 0.13);
+}
+
+.dropdown-list a {
+    margin: 10px 15px;
+    transition: 0.3s all linear;
+    white-space: nowrap;
+}
+
+.pages,
+.card-wrapper {
+    position: relative;
+}
+
+.fa-chevron-down {
+    font-size: 12px;
+    color: #C19D60;
+    position: relative;
+}
+
+.main-content {
+    overflow: hidden;
+}
+
+@media all and (min-width: 993px) and (max-width: 1080px) {
+
+    .main-content {
+        height: 80% !important;
+    }
+
+}
+
+/*//////////////////////////// header-end ////////////////////////////*/
+
+
+/*//////////////////////////// main-start ////////////////////////////*/
+
+#about-us,
+#reccomendation,
+#services,
+#service-categories,
+#gallery {
+    background-color: rgb(244, 244, 244);
+}
+
+#chefS-menu,
+#awards,
+#faq,
+#contact-details,
+#blog {
+    background-color: #1b1b1b;
+}
+
+#about-us .grid,
+#wine .grid {
+    grid-template-columns: 1fr 5% 50%;
+}
+
+#chefS-menu .grid {
+    grid-template-columns: 10% 1fr 10% 1fr 10%;
+}
+
+#recommendation h1,
+#features h1,
+#chefs h1,
+#service-categories h1 {
+    position: relative;
+    z-index: 1;
+}
+
+#recommendation h1::after,
+#features h1::after,
+#chefs h1::after,
+#service-categories h1::after {
+    position: absolute;
+    font-family: pinyonScript, sans-serif;
+    font-size: 130px;
+    z-index: -1;
+    color: #c1c1c165;
+    content: "Menu";
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+
+#features h1::after {
+    content: "features";
+    color: #4e4e4e3e;
+}
+
+#service-categories h1::after {
+    content: "Services";
+}
+
+#chefs h1::after {
+    content: "Chefs";
+    color: #4e4e4e3e;
+}
+
+.chef,
+.tray,
+.coffee,
+.wine-icon {
+    position: relative;
+    width: 40px;
+}
+
+.chef::before,
+.chef::after,
+.tray::before,
+.tray::after,
+.coffee::after,
+.coffee::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: #C19D60;
+    top: 50%;
+}
+
+.tray::before,
+.tray::after {
+    background-color: #4e4e4e3e;
+}
+
+.chef::before,
+.tray::before,
+.coffee::before {
+    right: -250%;
+}
+
+.chef::after,
+.tray::after,
+.coffee::after {
+    left: -250%;
+}
+
+.recommendation {
+    position: relative;
+}
+
+.recommendation::after {
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: 0.6s all linear;
+}
+
+
+.description {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s all linear;
+}
+
+.description .icon {
+    width: 35px;
+}
+
+.line {
+    width: 80px;
+    background-color: white;
+    height: 2px;
+    transition: 0.7s all linear;
+    margin: 10px 0 60px 0;
+}
+
+#testimony,
+#video {
+    background-image: url("../images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+#testimony::after {
+    z-index: -1;
+    opacity: 60%;
+}
+
+#testimony .grid,
+#reservations .grid {
+    grid-template-columns: 40% 7% 1fr;
+    height: 100%;
+}
+
+.fa-star {
+    color: #d7992f;
+    margin: 5px 2px;
+}
+
+.person .image {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    outline: 1px solid #d7992f;
+    outline-offset: 7px;
+}
+
+.opening-hours-timetable,
+.make-a-reservation {
+    background-color: #1b1b1b;
+    position: absolute;
+    right: 0;
+    width: 80%;
+    bottom: -100px;
+    padding: 30px 40px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.opening-hours-timetable .line,
+.make-a-reservation .line {
+    background-color: rgba(255, 255, 255, 0.126);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.make-a-reservation .line {
+    background-color: #C19D60;
+}
+
+.vertical-line {
+    height: 80px;
+    margin-top: 15px;
+    width: 1px;
+    background-color: #C19D60;
+}
+
+.fa-location-dot {
+    color: #C19D60;
+    margin-right: 5px;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.service .icon {
+    margin: 10px;
+}
+
+#services {
+    padding: 80px 0;
+}
+
+#features,
+#chefs {
+    background-image: linear-gradient(to bottom, #1b1b1b 0%, #1b1b1b 60%, rgb(244, 244, 244) 60%, rgb(244, 244, 244) 50%);
+}
+
+#chefs {
+    padding-bottom: 100px;
+}
+
+.front-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.card-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+}
+
+.card-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.front-card::after {
+    opacity: 35%;
+
+}
+
+.front-card .icon {
+    width: 50px;
+}
+
+.back-card {
+    background-color: #f2eee8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.back-card button {
+    background-color: #1b1b1b;
+    border: none;
+    outline: navajowhite;
+}
+
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s all linear;
+}
+
+.card-container:hover .card-inner {
+    transform: rotateY(-180deg);
+}
+
+
+#menu {
+    background-color: #1b1b1b;
+    overflow: hidden;
+}
+
+#menu h1 {
+    position: relative;
+    z-index: 1;
+}
+
+#menu h1::after {
+    position: absolute;
+    font-family: pinyonScript, sans-serif;
+    font-size: 130px;
+    z-index: -1;
+    color: #4e4e4e3e;
+    content: "Menu";
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.menu-list,
+#wine-bar .grid,
+#awards .grid,
+#faq .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
+
+.food-image .image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    margin: 10px 10px 10px 0;
+}
+
+.dot-line {
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(to right, rgb(106, 106, 106) 0%, rgb(106, 106, 106) 2%, transparent 2%, transparent 4%);
+}
+
+.menu-list p,
+#chefs p {
+    margin: 0;
+}
+
+.menu-list h3 {
+    white-space: nowrap;
+}
+
+#menu .item,
+#wine-bar .item,
+#faq .item {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-types {
+    position: relative;
+    margin-top: 30px;
+}
+
+.mains,
+.salads,
+.desserts,
+.wine {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: #1b1b1b;
+    width: 100%;
+    transition: 0.3s all linear;
+}
+
+.starters {
+    transition: 0.3s all linear;
+}
+
+#video::after {
+    opacity: 30%;
+    pointer-events: none;
+}
+
+.play {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px white solid;
+    transition: 0.5s all linear;
+}
+
+.fa-play {
+    font-size: 40px;
+    transition: 0.5s all linear;
+}
+
+.play:hover {
+    border: 2px #C19D60 solid;
+    cursor: pointer;
+}
+
+.play:hover .fa-play {
+    color: #C19D60;
+}
+
+
+#wine-bar {
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+#wine-bar h3 {
+    white-space: nowrap;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/*//////////////////////////// main-end ////////////////////////////*/
+
+
+/*//////////////////////////// footer-start ////////////////////////////*/
+
+footer {
+    background-color: #1b1b1b;
+    padding: 60px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+footer .grid {
+    grid-template-columns: 30% 30% 1fr;
+    column-gap: 50px;
+    align-items: baseline;
+}
+
+footer input {
+    width: 100%;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+footer ::placeholder {
+    color: #777;
+}
+
+footer button {
+    background-color: #C19D60;
+    margin: 0;
+}
+
+footer button:hover {
+    background-color: white;
+    color: #C19D60;
+}
+
+.subscribe {
+    outline: 1px solid #C19D60;
+    outline-offset: 2px;
+}
+
+/*//////////////////////////// footer-end ////////////////////////////*/
